@@ -1,6 +1,8 @@
-from controller import SuspeitoController
+from view_model import SuspeitoViewModel
+from view import SuspeitoView
 
 
 if __name__ == "__main__":
-    app = SuspeitoController()
-    app.iniciar()
+    vm = SuspeitoViewModel()
+    view = SuspeitoView(vm)
+    view.iniciar()
